@@ -1,0 +1,13 @@
+File IO
+--------
+We break this topic into 3 parts:
+	1. Byte Stream
+	2. Character Stream
+	3. Serialization and Deserialization
+	4. Test & Project
+
+1. Byte Stream
+
+
+Example:
+1. com.bytestream.FOSExample1
