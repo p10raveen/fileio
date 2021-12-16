@@ -7,6 +7,40 @@ We break this topic into 3 parts:
 	4. Test & Project
 
 1. Byte Stream
+It provides a convenient means for handling input and output of byte.
+
+ByteStream classes
+1. FileInputStream: Input stream that reads from a file
+2. FileOutputStream: Used for Buffered Output Stream.
+3. BufferedInputStream: Used for Buffered Input Stream.
+4. BufferedOutputStream: Used for Buffered Output Stream.
+
+FileOutputStream:
+1. Java FileOutputStream is an output stream used for writing data to a file.
+2. If you have to write primitive values into a file, use FileOutputStream class. 
+3. You can write byte-oriented as well as character-oriented data through FileOutputStream class.
+
+Java FileInputStream 
+1. class obtains input bytes from a file.
+2. It is used for reading byte-oriented data (streams of raw bytes.
+3. can also read character-stream data.
+Methods:-
+int read()	It is used to read the byte of data from the input stream.
+int read(byte[] b)	It is used to read up to b.length bytes of data from the input stream.
+int read(byte[] b, int off, int len) It is used to read up to len bytes of data from the input stream.
+
+Java BufferedOutputStream 
+1. class is used for buffering an output stream. 
+2. It internally uses buffer to store data.
+3. It adds more efficiency than to write data directly into a stream. So, it makes the performance fast.
+Syntax:-
+OutputStream os= new BufferedOutputStream(new FileOutputStream(“path")); 
+
+Java BufferedInputStream 
+1. class is used to read information from stream.
+2. It internally uses buffer mechanism to make the performance fast.
+3. When the bytes from the stream are skipped or read, the internal buffer automatically refilled from the contained input stream, many bytes at a time.
+4. When a BufferedInputStream is created, an internal buffer array is created.
 
 
 Example:
